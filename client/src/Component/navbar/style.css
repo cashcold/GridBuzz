@@ -1,0 +1,53 @@
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8)
+}
+.mainNavbar{
+    margin-top: 1.5rem;
+}
+.toogleBtn{
+    display: none;
+}
+
+.toogleBtn div{
+    background-color: red;
+    width: 35px;
+    height: 5px;
+    margin: 5px;
+}
+.main-nav ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+.main-nav a{
+    background-color: var(--primary);
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark );
+    box-shadow: var(--shadow);
+    
+}
+.main-nav a:hover{
+    background-color: black;
+    color: white;
+}
+
+@media(max-width: 700px){
+    .main-nav ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .toogleBtn{
+        display: block;
+        margin-left: 25rem;
+    }
+    .nav-links{
+        display: none;
+    }
+}
